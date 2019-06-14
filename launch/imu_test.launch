@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- launch base node and publish all tf -->
+
+<launch>
+
+	<node name="serial_port_driver" pkg="serial_port_driver" type="serial_port_driver_node"  respawn="true" >
+		<param name="serial_port1" value="/dev/cp210"/>
+	</node>
+
+</launch>
